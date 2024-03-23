@@ -28,5 +28,17 @@ public class User {
     private String password;
     private BigDecimal balance;
     @Enumerated(EnumType.STRING)
-    private UserType userType;
+    public static UserType userType;
+
+    public UserType getUserType() {
+        return this.userType;
+    }
+
+    public BigDecimal getBalance() {
+        return this.balance;
+    }
+
+    public BigDecimal setBalance(BigDecimal subtract) {
+        return this.balance;
+    }
 }
